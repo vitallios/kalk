@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .7s;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.wrap {
+    width: 100%;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.418);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.btnCalk {
+    border: none;
+    border-radius: 10px;
+    background: #eee;
+    margin: 30px;
+    padding: 0.4em
+}
+
+.btnReset{
+    width: 3em;
+    height: 3em;
+    font-weight: 800;
+    border: none;
+    border-radius: 50%;
+}
+.btnReset:hover{
+    background: rgb(180, 180, 180);
+    color: #fff;
+
+}
+
+.calkulatorWrap h1 {
+    text-align: center;
+}
+
+.calkClose {
+    width: 2em;
+    height: 2em;
+    font-weight: 800;
+    border: none;
+    border-radius: 50%;
+}
+
+.calkClose:hover {
+    background: rgb(180, 180, 180);
+    color: #fff;
+}
+
+/* модалка */
+.mcbody {
+    max-width: 50%;
+    max-height: 100%;
+    background: #ffffff;
+    margin: 3% 25%;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.calc{
+    height: 100vh;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal {
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 400px;
+}
+
+.vzreb {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.podcladka{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: fit-content;
+    gap: 0.2em;
+    height: 1.5em;
+}
+.podc{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+.tipizd {
+    display: contents;
+}
+
+.rostrazm {
+    display: contents;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.calkBack {
+    width: 3em;
+    height: 3em;
+}
+
+
+.text b {
+    color: red;
+    /* font-size: 1.2em; */
+}
+.text #resoltFitTextSpan{
+    font-size: 1em;
+}
+
+
+
+
+.itemInput {
+    min-width: 100%;
+    border: none;
+    padding: 0.4em;
+    outline: none;
+    transition: all ease 0.7s;
+    margin-bottom: 1em;
+    text-align-last: left;
+    background: none;
+    border-radius: 10px;
+}
+
+.itemInput:hover {
+    border-bottom: 1px solid #b1b1b1;
+    transition: all ease 0.7s;
+    list-style: none;
+  
+}
+
+ 
+.none {
+    display: none;
+}
+
+
+
+.btnItem {
+    align-items: center;
+    text-align: center;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px #ccc;
+    opacity: 1;
+    transition: 0.8s all;
+    position: relative;
+    border-radius: 10px;
+    background: #a3a3a3;
+    padding: 1em;
+    min-width: 6em;
+    color: #fff;
+    width: auto;
+}
+
+.btnBack {
+    padding: 2%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.calkBack{
+    border: none;
+    border-radius: 50%;
+    background: #eee;
+}
+
+
+.none {
+    display: none;
+}
+
+.vzred_item{
+    display: flex;
+    align-items: center;
+    margin: 0.3em;
+}
+
+.chec{
+    position: absolute;
+    opacity: 0;
+}
+
+
+.rul{
+    text-align: center;
+}
+
+
+.resultZakaz{
+    min-width: 15em;
+    text-align: center;
+    border: 1px solid #dfa5a5;
+    padding: 0.3em;
+    border-radius: 10px;
+    min-height: 5em;
+    font-size: x-large;
+    margin: 0.4em;
+    margin-top: 1em;
+}
+
+.resoltFin{
+    min-width: 80%;
+    text-align: center;
+    max-height: 100px;
+    padding: 5px;
+}
+.spans{
+    opacity: 0;
+}
+.info_footer{
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+
+option{
+    line-height: 0%;
+    height: 0;
+    padding: 0;
+}
+
+@media (max-width: 700px) { 
+    .mcbody {
+        max-width: 100%;
+        width: 80%;
+        background: #ffffff;
+        margin: 3% auto;
+        padding: 1em;
+        border-radius: 10px;
+    }
+}

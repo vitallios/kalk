@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="calc.css">
+	<title>Калькулятор для расчета необходимого количества полотна</title>
+</head>
+<body class="loading  panels_white">
+	<div class="calkulatorWrap">
+		<button id="btnCalk" class="btnCalk">калькулятор расхода ткани</button>
+		<div class="wrap none">
+			<div class="calc" id="calculator">
+				<div id="mcbody" class="mcbody">
+					<div class="clo">
+						<button class="calkClose">
+							&#10006;
+						</button>
+					</div>
+					<div class="modal">
+						<div id="vzreb" class="vzreb">
+							<div class="vzred_item">
+								<input type="radio" id="vzrebinput1" class="vzrebinput1 chec " value="vzr" name="vzri">
+								<label for="vzrebinput1" class="vzrebinput1Label">Взрослый</label>
+							</div>
+							<div class="podcladka">
+								<input type="checkbox" name="podc" id="podc" class="podc">
+								<label for="podc" class="labl_podc">с подкладка</label>
+							</div>
+						</div>
+						<div id="tipizd" class="tipizd">
+							<select id="rul" class="rul itemInput">
+							</select>
+							<select id="ti" class="ti itemInput">
+							</select>
+						</div>
+						<div id="rostrazm" class="rostrazm ">
+							<select id="razm" class="razm  itemInput">
+							</select>
+							<!-- <span id="razmSpan" class="razmSpan" style="color:rgb(175, 27, 27);">*указан европейский
+								размер</span> -->
+							<select id="rost" class="rost  itemInput">
+							</select>
+							<input type="button" id="count" class="count btnItem" value="Произвести расчет">
+						</div>
+						<div class="resoltFin">
+							<!-- <div id="resultZakaz" class="resultZakaz">
+							</div> -->
+							<div id="resres" class="resres">
+								Необходимое количество полотна в метрах:
+								<span style="color:#ccc;"></span>
+							</div>
+							<!-- количество ткани с учетом подкладки -->
+							<div id="resresPodkladka" class="resresPodkladka">
+								<span class="spans" style="color:rgb(209, 31, 31);"></span>
+							</div>
+							<!-- количество ткани с учетом подкладки -->
+							<div id="resoltFitText" class="text">
+								Расчетная ширина рулона ткани (в см): <span id="resoltFitTextSpan"
+									style="color: rgb(25, 136, 3);"></span><br>
+								<b>+ запас в 10%</b>
+							</div>
+							<span class="info_footer"></span>
+						</div>
+					</div>
+					<div class="btnBack ">
+						<button class="btnReset">&#8634</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="calc.js"></script>
+	<!-- <script src="calk.js"></script> -->
+</body>
+</html>
