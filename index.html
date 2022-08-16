@@ -10,7 +10,7 @@
 <body class="loading  panels_white">
 	<div class="calkulatorWrap">
 		<button id="btnCalk" class="btnCalk">калькулятор расхода ткани</button>
-		<div class="wrap none">
+		<div class="vitallios-wrap none">
 			<div class="calc" id="calculator">
 				<div id="mcbody" class="mcbody">
 					<div class="clo">
@@ -18,56 +18,68 @@
 							&#10006;
 						</button>
 					</div>
-					<div class="modal">
+					<div class="vitallios-modal">
 						<div id="vzreb" class="vzreb">
-							<div class="vzred_item">
-								<input type="radio" id="vzrebinput1" class="vzrebinput1 chec " value="vzr" name="vzri">
+							<!-- <div class="vzred_item">
+								<input type="radio" id="vzrebinput1" class="vzrebinput1 vitallios-chec " value="vzr" name="vzri">
 								<label for="vzrebinput1" class="vzrebinput1Label">Взрослый</label>
-							</div>
+							</div> -->
+							<h2 for="vzrebinput1" class="vzrebinput1Label">Калькулятор для расчета ткани для изделия</h2>
+							
+							<hr class="hr">
 							<div class="podcladka">
 								<input type="checkbox" name="podc" id="podc" class="podc">
-								<label for="podc" class="labl_podc">с подкладка</label>
+								<label for="podc" class="labl_podc">с подкладкой</label>
 							</div>
 						</div>
 						<div id="tipizd" class="tipizd">
-							<select id="rul" class="rul itemInput">
-							</select>
-							<select id="ti" class="ti itemInput">
+							<select id="vitallios-rul" class="vitallios-rul itemInput">
+							</select><span class="vitallios__select-span">( см. )</span>
+							<select id="vitallios-ti" class="vitallios-ti itemInput">
 							</select>
 						</div>
 						<div id="rostrazm" class="rostrazm ">
-							<select id="razm" class="razm  itemInput">
-							</select>
-							<!-- <span id="razmSpan" class="razmSpan" style="color:rgb(175, 27, 27);">*указан европейский
+							<select id="vitallios-razm" class="vitallios-razm  itemInput">
+							</select><span class="vitallios__select-span">( рус. )</span>
+							<!-- <span id="razmSpan" class="razmSpan" style="color:#ed3237;">*указан европейский
 								размер</span> -->
-							<select id="rost" class="rost  itemInput">
-							</select>
-							<input type="button" id="count" class="count btnItem" value="Произвести расчет">
+							<select id="vitallios-rost" class="vitallios-rost  itemInput">
+							</select><span class="vitallios__select-span">( см. )</span>
+							<input type="button" id="vitallios-count" class="vitallios-count btnItem" value="Произвести расчет">
 						</div>
 						<div class="resoltFin">
 							<!-- <div id="resultZakaz" class="resultZakaz">
 							</div> -->
-							<div id="resres" class="resres">
-								Необходимое количество полотна в метрах:
-								<span style="color:#ccc;"></span>
+
+
+							<div id="resoltFitText" class="text">
+								Расчетная ширина рулона ткани: 
+								<span id="resoltFitTextSpan"
+									style="color: rgb(25, 136, 3);">
+								</span>
+								<span></span>
 							</div>
+
+
 							<!-- количество ткани с учетом подкладки -->
 							<div id="resresPodkladka" class="resresPodkladka">
-								<span class="spans" style="color:rgb(209, 31, 31);"></span>
+								<span class="spans" style="color: #ed3237;"></span>
 							</div>
 							<!-- количество ткани с учетом подкладки -->
-							<div id="resoltFitText" class="text">
-								Расчетная ширина рулона ткани (в см): <span id="resoltFitTextSpan"
-									style="color: rgb(25, 136, 3);"></span><br>
-								<b>+ запас в 10%</b>
+							<div id="resres" class="resres">
+								Необходимое количество полотна в метрах:
+								<span style="color:#ccc;"></span><br>
+								<b class="resresB">(количество полотна расчитывается с запас в 10%)</b>
 							</div>
-							<span class="info_footer"></span>
 						</div>
 					</div>
+
 					<div class="btnBack ">
 						<button class="btnReset">&#8634</button>
 					</div>
 				</div>
+
+			
 			</div>
 		</div>
 	</div>

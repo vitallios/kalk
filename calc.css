@@ -2,13 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: all .7s;
-    font-size: 1rem;
+    transition: all .2s;
+    font-size: 1.03em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
-.wrap {
+.vitallios-wrap {
     width: 100%;
     height: fit-content;
     background: rgba(0, 0, 0, 0.418);
@@ -27,14 +27,15 @@
     padding: 0.4em
 }
 
-.btnReset{
+.btnReset {
     width: 3em;
     height: 3em;
     font-weight: 800;
     border: none;
     border-radius: 50%;
 }
-.btnReset:hover{
+
+.btnReset:hover {
     background: rgb(180, 180, 180);
     color: #fff;
 
@@ -59,15 +60,15 @@
 
 /* модалка */
 .mcbody {
-    max-width: 50%;
+    width: 70%;
     max-height: 100%;
     background: #ffffff;
-    margin: 3% 25%;
+    margin: 0 auto;
     padding: 1em;
     border-radius: 10px;
 }
 
-.calc{
+.calc {
     height: 100vh;
     position: relative;
     top: 0;
@@ -76,7 +77,7 @@
     right: 0;
 }
 
-.modal {
+.vitallios-modal {
     height: auto;
     margin: 0 auto;
     display: flex;
@@ -85,7 +86,8 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 90%;
-    max-width: 400px;
+    max-width: 550px;
+    padding-bottom: 2em;
 }
 
 .vzreb {
@@ -97,7 +99,15 @@
     flex-direction: column;
     margin-bottom: 1em;
 }
-.podcladka{
+
+.hr {
+    width: 100%;
+    margin: 0.2em 0 0.8em;
+    background: #3d3d3d;
+    outline: none;
+}
+
+.podcladka {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -105,22 +115,29 @@
     width: fit-content;
     gap: 0.2em;
     height: 1.5em;
+    
 }
-.podc{
+
+.podc {
     margin: 0;
     padding: 0;
     line-height: 0;
 }
+
 .tipizd {
-    display: contents;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .rostrazm {
-    display: contents;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .calkBack {
@@ -129,11 +146,16 @@
 }
 
 
-.text b {
-    color: red;
-    /* font-size: 1.2em; */
+.resres b {
+    color: rgb(245 103 107);
+    font-size: 0.9em;
 }
-.text #resoltFitTextSpan{
+
+.resres span {
+    font-size: larger;
+}
+
+.text #resoltFitTextSpan {
     font-size: 1em;
 }
 
@@ -141,7 +163,7 @@
 
 
 .itemInput {
-    min-width: 100%;
+    width: 88%;
     border: none;
     padding: 0.4em;
     outline: none;
@@ -149,39 +171,24 @@
     margin-bottom: 1em;
     text-align-last: left;
     background: none;
-    border-radius: 10px;
+    border-radius: 9px;
 }
 
 .itemInput:hover {
     border-bottom: 1px solid #b1b1b1;
     transition: all ease 0.7s;
     list-style: none;
-  
+
 }
 
- 
+
 .none {
     display: none;
 }
 
 
 
-.btnItem {
-    align-items: center;
-    text-align: center;
-    outline: none;
-    border: none;
-    box-shadow: 0 0 10px #ccc;
-    opacity: 1;
-    transition: 0.8s all;
-    position: relative;
-    border-radius: 10px;
-    background: #a3a3a3;
-    padding: 1em;
-    min-width: 6em;
-    color: #fff;
-    width: auto;
-}
+.btnItem {}
 
 .btnBack {
     padding: 2%;
@@ -193,7 +200,7 @@
     justify-content: space-between;
 }
 
-.calkBack{
+.calkBack {
     border: none;
     border-radius: 50%;
     background: #eee;
@@ -204,24 +211,24 @@
     display: none;
 }
 
-.vzred_item{
+.vzred_item {
     display: flex;
     align-items: center;
     margin: 0.3em;
 }
 
-.chec{
+.vitallios-chec {
     position: absolute;
     opacity: 0;
 }
 
 
-.rul{
+.rul {
     text-align: center;
 }
 
 
-.resultZakaz{
+.resultZakaz {
     min-width: 15em;
     text-align: center;
     border: 1px solid #dfa5a5;
@@ -233,33 +240,48 @@
     margin-top: 1em;
 }
 
-.resoltFin{
+.resoltFin {
     min-width: 80%;
     text-align: center;
     max-height: 100px;
     padding: 5px;
 }
-.spans{
+
+.spans {
     opacity: 0;
 }
-.info_footer{
-    font-size: 0.8em;
-    opacity: 0.6;
+.vitallios__select-span{
+    font-size: 1em;
+    color: #979797;
 }
 
-option{
+option {
     line-height: 0%;
     height: 0;
     padding: 0;
 }
 
-@media (max-width: 700px) { 
-    .mcbody {
-        max-width: 100%;
+@media (max-width: 700px) {
+    .itemInput {
         width: 80%;
+    }
+    .mcbody {
+        width: 90%;
         background: #ffffff;
         margin: 3% auto;
         padding: 1em;
         border-radius: 10px;
+    }
+    .vitallios-modal{
+        margin-bottom: 3.5em;
+    }
+    .btnBack {
+        margin-top: 2em;
+    }
+ 
+}
+@media (max-width: 400px){
+    .itemInput {
+        width: 70%;
     }
 }
